@@ -1,0 +1,77 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>Son's of Anarchy Fan Page</title>
+  <link rel="stylesheet" type="text/css" href="./soacast.css">   
+	
+</head>
+<body>
+
+
+	<div id="child">
+		<nav>
+<ul><li><img src="https://i.pinimg.com/736x/11/5b/4c/115b4cc51254caca89997c6e1650b9a3--new-dads-celebration-cakes.jpg" width="50px" height="50px"></li></ul>
+
+<ul><li><a href="soafollow.html">Follow</a></li></ul>
+
+<ul><li><a href="soamerchandise.html">Merchandise</a></li></ul>
+
+<ul><li><a href="soacast.html">Cast</a></li></ul>
+
+<ul><li><a href="index.html">Home</a></li></ul>
+
+
+
+
+</nav>
+
+  	<h1>Welcome to the Sons</h1>
+  	<h2>Members of the Club</h2>
+  	<p>If you are wondering, "Who are the actors that starred on Sons of Anarchy?", then this list will help you answer that question.
+  		
+  </p>
+
+
+
+
+ </div>
+ <div id="child2">
+
+<a class="back-button" onclick="plusDivs(-1)">&#x2620;</a>
+<img class="slideShow" src="soa1.png" height="350px" width="350px;">
+<img class="slideShow" src="soa2.png" height="350px" width="350px;">
+<img class="slideShow" src="soa3.png" height="350px" width="350px;">
+<img class ="slideShow" src="soa4.png" height="350px" width="350px;">
+<img class ="slideShow" src="soa5.png" height="350px" width="350px;">
+<a class="forward-button" onclick="plusDivs(+1)">&#x2620;</a>
+
+<script>
+
+  var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n)  {
+  var i;
+  var x = document.getElementsByClassName('slideShow');
+  if (n > x.length) {slideIndex=1}
+  if (n<1) {slideIndex = x.length}
+  for (i=0; i<x.length; i++) {
+    x[i].style.display="none";
+  } 
+  x[slideIndex-1].style.display="inline";
+
+
+}
+
+</script>
+
+  </div> 
+</div>
+
+</body>
+</html>
